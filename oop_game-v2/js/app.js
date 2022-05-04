@@ -33,7 +33,7 @@ keyboard.addEventListener("click", e => {
 const letters = document.querySelectorAll(".key");
 document.addEventListener("keyup", e => {
 letters.forEach(letter => {
-    if (e.key === letter.textContent){
+    if (e.key === letter.textContent && letter.className ==='key'){
         game.handleInteraction(letter);
     }
 })

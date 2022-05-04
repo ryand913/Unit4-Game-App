@@ -8,7 +8,6 @@ class Phrase {
     addPhraseToDisplay() {
         phraseSection.innerHTML = '';
        const letters =  this.phrase.split('');
-       const list = [];
        letters.forEach((letter) => {
            if (letter === ' '){
             phraseSection.innerHTML += '<li class="space"> </li>'
@@ -23,9 +22,7 @@ class Phrase {
             if (this.phrase.includes(selection)){
                 return true
             }
-            else {
                 return false
-            }
         }
 // Show a letter if it is contained within the phrase
     showMatchedLetter(select){

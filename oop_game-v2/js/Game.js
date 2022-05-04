@@ -10,7 +10,7 @@ class Game {
         new Phrase("Run Away With Me"),
         new Phrase("Say It Aint So")
 
-    ],
+    ]
     this.activePhrase = null
     }
 
@@ -66,7 +66,7 @@ class Game {
         }
     }
     //show the original home screen based on whether the player wins or not
-    gameOver(result) {
+    gameOver() {
         const overlay = document.getElementById("overlay");
         overlay.style.display = '';
 
