@@ -17,6 +17,8 @@ startBtn.addEventListener("click", event => {
         hearts[i].src = "images/liveHeart.png"
     }
     game.missed = 0;
+    const container = document.querySelector(".main-container");
+    container.style.filter = "brightness(100%)";
     game.startGame();
 });
 // Add event handling for the keyboard buttons and pass the value into the handleInteraction() function

@@ -39,6 +39,8 @@ class Game {
           else {
               choice.className = 'wrong';
               this.removeLife();
+              const container = document.querySelector(".main-container");
+              container.style.filter = `brightness(${90 - (this.missed * 2)}%)`
         }
 
       }
